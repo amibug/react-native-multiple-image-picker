@@ -313,7 +313,6 @@ class MultipleImagePickerImp(reactContext: ReactApplicationContext?) :
 
         val activity = reactApplicationContext.currentActivity
             ?: throw IllegalStateException("No current Activity available")
-
         PictureSelector
             .create(activity)
             .openPreview()
