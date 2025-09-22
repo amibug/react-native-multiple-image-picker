@@ -30,7 +30,7 @@ class CameraEngine(
         camera.setOutputPathDir(getSandboxCameraOutputPath())
 
         config.color?.let {
-            val primaryColor = ColorPropConverter.getColor(it, appContext)
+            val primaryColor = ColorPropConverter.getColor(it, appContext) ?: Color.BLACK
             camera.setCaptureLoadingColor(primaryColor)
         }
 
